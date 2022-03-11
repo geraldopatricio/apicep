@@ -37,7 +37,9 @@ http://localhost:3000/doc/
 /consultacep/61760-000
 
 ## Video Demo de Uso
-https://youtu.be/lg7dwsxjlz4
+<video width="300px" height="300px" controls> 
+  <source src="https://youtu.be/lg7dwsxjlz4" type="video/mp4">
+</video>
 
 Não conseguiu ver? <a href="https://youtu.be/lg7dwsxjlz4">Clique Aqui</a>
 
