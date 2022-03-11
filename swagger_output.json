@@ -1,0 +1,120 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "CEP consulta",
+    "description": "API para consulta de CEP"
+  },
+  "host": "web-srv-api-cep.azurewebsites.net",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "CEP",
+      "description": "Endpoints de consulta"
+    }
+  ],
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/consultacep/{cep}": {
+      "get": {
+        "tags": [
+          "CEP"
+        ],
+        "description": "Endpoint para consultar CEP",
+        "parameters": [
+          {
+            "name": "cep",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "example" : "60325000 ou 60325-000"
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/CEP"
+            },
+            "description": "CEP encontrado"
+          },
+          "400": {
+            "schema": {
+              "type" : "object",
+              "properties": 
+              {
+                "value": {
+                  "type": "string",
+                  "example": "60325-00"
+                },
+                "msg": {
+                  "type": "string",
+                  "example" : " CEP incorreto ou faltando."
+                },
+                "param": {
+                  "type": "string", 
+                  "example": "cep"
+                },
+                "location": { 
+                  "type": "string", 
+                  "example" :"params"
+                }
+              }
+            },
+            "description": "CEP incorreto ou faltando."
+          },
+          "404": {
+            "schema": {
+              "type": "object",
+              "properties":{
+                "msg":{
+                  "type": "string",
+                  "example": "CEP não encontrado"
+                }
+              }
+            },
+            "description": "CEP não encontrado"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CEP": {
+      "type": "object",
+      "properties": {
+        "cep": {
+          "type": "string",
+          "example": "60325000"
+        },
+        "state": {
+          "type": "string",
+          "example": "CE"
+        },
+        "city": {
+          "type": "string",
+          "example": "Fortaleza"
+        },
+        "neighborhood": {
+          "type": "string",
+          "example": "Farias Brito"
+        },
+        "street": {
+          "type": "string",
+          "example": "Avenida Bezerra de Menezes"
+        },
+        "service": {
+          "type": "string",
+          "example": "viacep"
+        }
+      }
+    }
+  }
+}
