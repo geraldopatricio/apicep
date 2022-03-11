@@ -37,9 +37,8 @@ http://localhost:3000/doc/
 /consultacep/61760-000
 
 ## Video Demo de Uso
+https://youtu.be/lg7dwsxjlz4
 
-![Video ConsultaCEP](./src/assets/ConsultaCEP.mp4)
-
-Não conseguiu ver? <a href="./src/assets/ConsultaCEP.mp4">Clique Aqui</a>
+Não conseguiu ver? <a href="https://youtu.be/lg7dwsxjlz4">Clique Aqui</a>
 
 
