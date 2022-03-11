@@ -37,9 +37,10 @@ http://localhost:3000/doc/
 /consultacep/61760-000
 
 ## Video Demo de Uso
-<video width="300px" height="300px" controls> 
-  <source src="https://youtu.be/lg7dwsxjlz4" type="video/mp4">
-</video>
+<object width="425" height="350">
+<param name="movie" value="https://youtu.be/lg7dwsxjlz4" />
+<embed src="https://youtu.be/lg7dwsxjlz4" type="application/x-shockwave-flash" width="425" height="350" />
+</object>
 
 Não conseguiu ver? <a href="https://youtu.be/lg7dwsxjlz4">Clique Aqui</a>
 
