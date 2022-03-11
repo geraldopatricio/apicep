@@ -39,6 +39,6 @@ http://localhost:3000/doc/
 ## Video Demo de Uso
 <video src="https://youtu.be/lg7dwsxjlz4"></video>
 
-Não conseguiu ver? <a href="https://youtu.be/lg7dwsxjlz4">Clique Aqui</a>
+Não conseguiu ver? <a href="https://youtu.be/lg7dwsxjlz4" target="_blank">Clique Aqui</a>
 
 
